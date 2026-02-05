@@ -23,4 +23,25 @@ const bigNumber =  4342432324334n
    
  }
  console.log(typeof anotherId);
+
+
+ //stack(Primitive),Heap(Non-primitive)
+
+let myYoutubename = "happyyoutube"
+let anothername = myYoutubename
+anothername = "chaiaurcode"
+// console.log(myYoutubename);
+// console.log(anothername);
+
+let userOne ={
+  email:"user@google.com",
+  upi : "user@upi"
+}
+let userTwo = userOne
+userTwo.email = "rakhi@google.com"
+console.log(userOne.email);
+console.log(userTwo.email);
+
+
+
  
