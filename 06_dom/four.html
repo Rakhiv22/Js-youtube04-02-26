@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>react learning</title>
+</head>
+<body style="background-color: #212121; color:#FFF">
+    <ul class="langauge">
+        <li>JavaScript</li>
+    </ul>
+</body>
+<script>
+    function addLanguage(langName) {
+        const li = document.createElement('li');
+        li.innerHTML= `${langName}`
+        document.querySelector('.langauge').appendChild(li)
+     
+    }
+    addLanguage("paython")
+    addLanguage("typescript")
+
+    function addOptiLanguage(langName) {
+        const li = document.createElement('li')
+        const addText = li.appendChild(document.createTextNode(langName))
+       document.querySelector('.language').appendChild(li)
+    }
+    
+    addLanguage('golang')
+
+    //Edit
+    const secounLang = document.querySelector("li:nth-child(2)")
+    //secounLang.innerHTML = "Mojo"
+    const newli = document.createElement('li')
+    newli.textContent = "Mojo"
+    secounLang.replaceWith(newli)
+    //edit
+    const firstLang = document.querySelector("li:first-child")
+    firstLang.outerHTML = "<li>Jave</li>"
+
+    //Remove
+    const lanstLang = document.querySelector("li:last-child")
+    lanstLang.remove()
+
+    
+</script>
+</html>
