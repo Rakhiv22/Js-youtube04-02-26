@@ -9,7 +9,8 @@ form.addEventListener('submit',function(e){
  
             
         }else if(weight === '' || weight < 0 || isNaN(weight))  {
-            results.innerHTML = `please provide a valid weight ${weight}`;
+             results.innerHTML = `please provide a valid weight ${weight}`;
+
    
             
         }else{
